@@ -1,0 +1,9 @@
+paths:
+  log: ./runs
+  data: ../data/raw_data/
+files:
+  file_name: heart_cleveland_upload.csv
+params:
+  - models: log_reg
+  - _self_
+  
