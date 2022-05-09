@@ -1,0 +1,19 @@
+paths:
+  log: ./runs
+  raw_data: data/raw_data
+  data: data
+train_test_split_params:
+  file_name: heart_cleveland_upload.csv
+  target_column_name: condition
+  random_state: 42
+  shuffle: True
+  test_size: 0.33
+files:
+  train_data: train_data.csv
+  test_data: test_data.csv
+  train_target: train_target.csv
+  test_target: test_target.csv
+defaults:
+  - model_params: log_reg
+  - _self_
+  

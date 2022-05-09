@@ -1,3 +1,3 @@
-from cat_mte import MTE
+from .cat_mte import MTE
 
 # __all__ = ["MTE"]

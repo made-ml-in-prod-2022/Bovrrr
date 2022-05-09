@@ -1,2 +1,5 @@
 hw_1_ml_in_prod_made/*
 task.md
+*.pyc
+outputs
+.vscode

@@ -61,6 +61,11 @@ class MTE(TransformerMixin):
     ):
         assert X is not None, f"{type(X)}"
 
-        X_ = self.encoder.transform(X, y)
+        X_ = None
+        if y is None:
+            X_ = self.encoder.transform(X)
+        else:
+            X_ = self.encoder.transform(X, y)
+
         logger.debug("MTE transfromed")
         return X_
